@@ -1,0 +1,28 @@
+.searchField{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .searchField label{
+    flex: 0 0 100%;
+    text-align: left;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .searchField input{
+    flex: 0 0 80%;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  .searchField button{
+    flex: 0 0 18%;
+    background-color: rgb(233, 72, 58);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+  }
