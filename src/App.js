@@ -11,7 +11,7 @@ function App() {
   useEffect( () => {
     fetch(`https://www.omdbapi.com/?apikey=37fe945a&s=${query}`)
       .then(res => res.json())
-      .then(data => setData(data.Search))
+      .then(data => setData(data))
       .catch(err => alert('Sorry det blev fel: ', err))
 
   /**
@@ -26,11 +26,11 @@ function App() {
     // }
     // getMovies();
   }, [query]);//körs enbart vid sidladdning 
-  
+
   return (
     <div className="App">
       <SearchMovies onSearch={performSearch}/>
-      <DisplayMovies data={data}/>
+      <DisplayMovies data={data} query={query}/>
 
       
     </div>

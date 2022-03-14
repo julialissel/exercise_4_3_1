@@ -14,11 +14,11 @@ function SearchMovies({onSearch}){
 
     return(
         <form className="searchField" onSubmit={handleSubmit}>
-            <label htmlFor="search">Search the site:</label>
+            <label htmlFor="search">&#x1F4FD; Search the site: </label>
             <input type="search"
                 onChange={onSearchChange}
                 name="search"
-                placeholder="Search..."
+                placeholder="Search for a movie or serie..."
                 id='search'
             />
             <button type="submit" id="submit" className="search-button"><i className="material-icons icn-search">search</i></button>
